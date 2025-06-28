@@ -1,0 +1,37 @@
+\documentclass{book}
+\usepackage{fontspec} % Unicode font support
+\usepackage[safe]{tipa} % IPA symbols, safe mode for compatibility
+\usepackage{expex} % Interlinear glossing
+\usepackage{tikz-qtree} % Syntax trees
+\setmainfont{Charis SIL} % Font with diacritics and IPA support
+% Note: If ruby package is unavailable, use table-based furigana
+\usepackage{multirow}   % if needed for formatting
+\usepackage{array}      % better table control
+\usepackage{booktabs}   % nice horizontal lines
+\usepackage[parfill]{parskip}
+
+\usepackage[a4paper, margin=1in]{geometry}
+
+\begin{document}
+
+\include{obsolete/o}
+
+\tableofcontents
+
+\include{chapters/a0100-introduction}
+\include{chapters/a0200-overview}
+\include{chapters/a0300-phonology}
+\include{chapters/a0350-orthography}
+\include{chapters/a0400-omnifix}
+\include{chapters/a0500-nouns}
+\include{chapters/a0600-verbs}
+\include{chapters/a0700-adjectives}
+\include{chapters/a0800-particles}
+\include{chapters/a0900-number}
+\include{chapters/a1000-clausestructure}
+\include{chapters/a1100-lexicon}
+\include{chapters/a1200-pragmatics}
+\include{chapters/a1300-dialects}
+
+
+\end{document}
